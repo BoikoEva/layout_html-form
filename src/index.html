@@ -10,18 +10,20 @@
   </head>
   <body>
     <form
-  action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-  method="POST"
-  autocomplete="off">
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      autocomplete="off"
+  >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="label" for="surname">Surname:
+        <label class="label" for="surname">
+            Surname:
           <input
-            type="text"
-            id="surname"
-            name="surname"
-            required
-            >
+              type="text"
+              id="surname"
+              name="surname"
+              required
+          >
         </label>
 
         <label class="label" for="name">Name:
@@ -30,7 +32,7 @@
               id="name"
               name="name"
               required
-              >
+          >
         </label>
 
         <label class="label" for="age">How old are You?
@@ -42,7 +44,7 @@
               min="1"
               max="100"
               required
-              >
+          >
         </label>
 
         <label  class="label" for="date">Full date of birth:
@@ -56,7 +58,8 @@
           <input
               type="checkbox"
               id="terms"
-              name="terms">
+              name="terms"
+          >
         </label>
       </fieldset>
 
@@ -65,21 +68,22 @@
 
         <label class="label" for="mail">E-mail
           <input
-        type="email"
-        id="mail"
-        name="mail"
-        placeholder="email@example.com"
-        required>
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="email@example.com"
+              required
+          >
         </label>
 
         <label class="label" for="password">Password
           <input
-        type="pasword"
-        id="password"
-        name="password"
-        minlength="5"
-        maxlength="25"
-        required
+              type="pasword"
+              id="password"
+              name="password"
+              minlength="5"
+              maxlength="25"
+              required
           >
         </label>
       </fieldset>
@@ -93,7 +97,8 @@
               name="cats"
               id="yes"
               value="yes"
-            >Yes
+            >
+              Yes
           </label>
           <label for="no">
             <input
@@ -101,7 +106,8 @@
               name="cats"
               id="no"
               value="no"
-            >No
+            >
+              No
           </label>
         </div>
 
@@ -151,44 +157,46 @@
         <legend>Adittional info:</legend>
 
         <label class="label" for="comments">
-        Comments:
+          Comments:
           <textarea
-        name="comments"
-        id="comments">
+              name="comments"
+              id="comments">
           </textarea>
         </label>
 
         <label class="label" for="recommend">
-        Would you recommend us?
+          Would you recommend us?
           <select
-        name="recommend"
-        id="recommend">
-            <option
-            value="Choose"
-            selected
-            disabled
-          >Choose
-            </option>
-            <option
-          value="yes">
-          yes
-            </option>
-            <option
-          value="no"
+              name="recommend"
+              id="recommend"
           >
-          no
+            <option
+                value="Choose"
+                selected
+                disabled
+            >
+                Choose
+            </option>
+            <option
+                value="yes">
+                yes
+            </option>
+            <option
+                value="no"
+            >
+                no
             </option>
           </select>
         </label>
       </fieldset>
       <button
-    name="button"
-    class="submit"
-    value="Submit"
-    type="submit"
-    onsubmit="onSubmit()"
-  >
-  Submit
+        name="button"
+        class="submit"
+        value="Submit"
+        type="submit"
+        onsubmit="onSubmit()"
+      >
+        Submit
       </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
